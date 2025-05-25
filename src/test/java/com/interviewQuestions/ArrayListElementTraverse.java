@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class ArrayListElementTraverse {
 
 	public static void main(String[] args) {
+		
 		 int[] arr = {1, 2, 3, 4, 5}; // Original array
 		 
 	        arr = shiftRight(arr); // Shift operation
@@ -21,13 +22,13 @@ public class ArrayListElementTraverse {
 
 	        // Shift elements to the right
 	        for (int i = arr.length - 1; i > 0; i--) {
+	        	
 	            arr[i] = arr[i - 1];
 	        }
 
 	        arr[0] = lastElement; // Place last element at the first position
 	        return arr;
-	    }
-		// TODO Auto-generated method stub
 
 	}
+}
 

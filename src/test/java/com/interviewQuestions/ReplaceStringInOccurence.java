@@ -10,8 +10,6 @@ public class ReplaceStringInOccurence {
 	        // StringBuilder to store the modified string
 	        StringBuilder result = new StringBuilder();
 	        
-	        // Variable to count occurrences of 'o'
-	        int oCount = 0;
 	        
 	        // Iterate over each character in the input string
 	        for (int i = 0; i < input.length(); i++) {

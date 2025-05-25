@@ -1,32 +1,29 @@
 package com.interviewQuestions;
 
 public class FindSecondLargest {
-
-	public static void main(String[] args) {
 		
-		int[] arr = { 4, 3, 25, 6, 7, 8, 9, 2, 3, 10, 1 };
-		
-		int largest = 0;
-		
-		int sLargest = 0;
-		
-		for (int i = 1; i < arr.length; i++) {
+		public static void main(String args[]){
 			
-			if (arr[i] > arr[largest]) {
-				
-				largest = i;
+		      int temp, size;
+		      
+		      int[] array = {10, 20, 25, 63, 96, 57,78};
+		      
+		      size = array.length;
 
-			}
-			
-			if (largest < arr[i]) {
-				
-				sLargest = i;
-			}
-		}
-		System.out.println(arr[largest]);
-		
-		System.out.println(arr[sLargest]);
-
-	}
-
+		      for(int i = 0; i<size; i++ ){
+		    	  
+		         for(int j = i+1; j<size; j++){
+		        	 
+		            if(array[i]>array[j]){
+		            	
+		               temp = array[i];
+		               
+		               array[i] = array[j];
+		               
+		               array[j] = temp;
+		            }
+		         }
+		      }
+		      System.out.println("second largest number is:: "+ array[size-2]);
+		   }
 }

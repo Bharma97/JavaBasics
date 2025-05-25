@@ -14,7 +14,8 @@ public class CountCharInJava {
 			char ch = name.charAt(i);
 //			System.out.println(ch);
 			if (ch=='a'||ch=='A') { // || is an OR operator
-				count = count+1;
+//				count = count+1;
+				count++;
 			}
 		}
 		System.out.println(count);

@@ -33,5 +33,8 @@ public class LeftRotateTheArray {
             System.out.print(temp[i] + " ");
         }
 	}
+	/*
+	 * 3 4 5 6 1 2 
+	 */
 	
 }

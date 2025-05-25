@@ -1,10 +1,11 @@
-package com.StringsCode;
+package com.NumbersCode;
 
 import java.util.*;
 
 public class Find2CommEleInArray {
 
 	public static void main(String[] args) {
+		
 		int[] arr1 = { 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 };
 		int[] arr2 = { 100, 9, 64, 7, 36, 5, 16, 3, 4, 1 };
 		  // print Array 1
@@ -31,7 +32,8 @@ public class Find2CommEleInArray {
 		// use retainAll() method to
         // find common elements
 		set1.retainAll(set2);
-		System.out.println("Common elements are: "+ set1);
+		
+		System.out.println("Common elements are: "+ set1.toString().replace("[", "").replace("]", ""));
 		
 	}
 

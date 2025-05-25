@@ -10,8 +10,10 @@ public class SmallestAndLargestNum {
 		 * 
 		 */
 		int[] arr = { 15, 2, 9, 12, 5, 6, 3, 10, 45 };
+		
 		int smallest = arr[0];
 		int largest = arr[0];
+		
 		for (int i = 1; i < arr.length; i++) {
 			if (arr[i] < smallest) {
 				smallest = arr[i];
@@ -23,4 +25,22 @@ public class SmallestAndLargestNum {
 		System.out.println("Smallest " + smallest);
 		System.out.println("Largest " + largest);
 	}
+	/*
+	 * /*
+	 * import java.util.Arrays;
+
+	public class MinMaxSort {
+    public static void main(String[] args) {
+        int[] arr = {45, 2, 89, 32, 7, 19, 90};
+        Arrays.sort(arr);
+
+        int min = arr[0];
+        int max = arr[arr.length - 1];
+
+        System.out.println("Smallest: " + min);
+        System.out.println("Largest: " + max);
+    }
 }
+	 */
+}
+

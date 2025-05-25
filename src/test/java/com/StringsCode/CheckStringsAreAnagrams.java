@@ -15,6 +15,7 @@ public class CheckStringsAreAnagrams {
 			Arrays.sort() - sorts both the char arrays
 			Arrays.equal() - checks if the sorted char array are equal
 		 */
+		
 		String str1 = "Race";
 		String str2 = "Care";
 		 str1 = str1.toLowerCase();

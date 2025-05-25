@@ -25,10 +25,8 @@ public class CountDigitFreq {
 		int counter = 0;
 		while(num!=0) {
 			int digit = num%10; // for calculating how many digits are there;
-			System.out.println("Digit "+ digit);
 			if(digit == D) counter++;
 			num = num/10;
-			System.out.println("number "+num);
 		}
 		return counter;
 	}

@@ -1,40 +1,58 @@
 package com.NumbersCode;
 
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class RemoveDuplicateArray {
 
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
+		 
+	        int[] array = {2, 4, 2, 5, 4, 6, 7};
 
-		int[] a = { 1, 1, 2, 2, 2 };
-		int n = a.length;
-		removeDuplicartes(a, n);
+	        Set<Integer> set = new LinkedHashSet<>();
+	        for (int num : array) {
+	            set.add(num); // HashSet removes duplicates automatically
+	        }
 
-		// printing the array elements
-		for (int i = 0; i < n; i++) {
-			System.out.println(a[i] + 1);
-		}
+	        // Convert Set back to array
+	        int[] result = set.stream().mapToInt(Integer::intValue).toArray();
+
+	        // Print result
+	        System.out.println(Arrays.toString(result));
+	    
 	}
+	 /*
+	  *  public static void main(String[] args) {
+        int[] array = {3, 5, 2, 3, 1, 5, 6};
 
-	static int removeDuplicartes(int a[], int n) {
-		if (n == 0 || n == 1) {
-			return n;
-		}
-		// creating another array for only storing
-		// the unique elements
-		int[] temp = new int[n];
-		int j = 0;
+        int[] result = Arrays.stream(array)
+                             .distinct()   // removes duplicates
+                             .toArray();
 
-		for (int i = 0; i < n - 1; i++) {
-			if (a[i] != a[i + 1]) {
-				temp[j++] = a[i];
-			}
-		}
-		temp[j++] = a[n - 1];
-		// Changing the original array
-		for (int i = 0; i < j; i++) {
-			a[i] = temp[i];
-		}
+        System.out.println(Arrays.toString(result));
+    }
+	  */
+/*
+ *  public static void main(String[] args) {
+        int[] arr = {2, 4, 2, 5, 4, 6, 7};
+        int n = arr.length;
 
-		return j;
-	}
+        System.out.print("Unique elements: ");
+        for (int i = 0; i < n; i++) {
+            boolean isDuplicate = false;
 
+            for (int j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+
+            if (!isDuplicate) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+ */
 }

@@ -3,9 +3,9 @@ package com.NumbersCode;
 import java.util.*;
 
 public class FindNonRepeatElements {
-
 	
 	public static void main(String[] args) {
+		
 		int[] num = {1, 1, 2, 2, 3, 4, 5, 5, 6, 6};
 		
 		Map<Integer, Integer> map = new HashMap<>();
